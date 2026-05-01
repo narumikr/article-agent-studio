@@ -691,3 +691,7 @@ memory: project  # .claude/agent-memory/<name>/ に保存
 - [Building Effective AI Agents - Anthropic Research](https://www.anthropic.com/research/building-effective-agents)
 - [How we built our multi-agent research system - Anthropic Engineering](https://www.anthropic.com/engineering/multi-agent-research-system)
 - [Building agents with the Claude Agent SDK - Anthropic Engineering](https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk)
+
+---
+
+最終更新日: 2026/04/29
