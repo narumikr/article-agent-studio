@@ -24,7 +24,8 @@ DDDは2003年にEric Evansが著書 *"Domain-Driven Design: Tackling Complexity 
 2. **ドメインエキスパートと開発者が協力してモデルを探求する** — ビジネス専門家と開発者が共同作業でモデルを洗練させる
 3. **明確に境界づけられたContextの中でUbiquitous Languageを使う** — 共通言語でコミュニケーションする
 
-[参考: Domain-Driven Design - Wikipedia](https://en.wikipedia.org/wiki/Domain-driven_design)
+[参考: ドメイン駆動設計（DDD）とは？概要や用語、開発の流れ等を解説](https://products.sint.co.jp/ober/blog/ddd)
+
 [参考: bliki: Domain Driven Design - Martin Fowler](https://martinfowler.com/bliki/DomainDrivenDesign.html)
 
 ---
@@ -331,15 +332,17 @@ DDDは大きく「戦略的設計（Strategic Design）」と「戦術的設計�
 [参考: DDD Part 2: Tactical Domain-Driven Design - Vaadin](https://vaadin.com/blog/ddd-part-2-tactical-domain-driven-design)
 
 ```mermaid
-graph TB
-    subgraph 戦略的設計["戦略的設計（Strategic Design）: 「何を・なぜ」"]
-        SD1[Bounded Context の特定]
-        SD2[Ubiquitous Language の確立]
-        SD3[Context Mapping]
-        SD4[Core / Supporting / Generic Domain の分類]
+graph LR
+  subgraph SD["戦略的設計（Strategic Design）"]
+    direction TB
+    SD1[Bounded Context の特定]
+    SD2[Ubiquitous Language の確立]
+    SD3[Context Map]
+    SD4[Core / Supporting / Generic Domain の分類]
     end
 
-    subgraph 戦術的設計["戦術的設計（Tactical Design）: 「どのように」"]
+  subgraph TD["戦術的設計（Tactical Design）"]
+    direction TB
         TD1[Entity / Value Object]
         TD2[Aggregate / Aggregate Root]
         TD3[Repository]
@@ -347,7 +350,7 @@ graph TB
         TD5[Domain Event]
     end
 
-    戦略的設計 --> 戦術的設計
+  SD --> TD
 ```
 
 | 観点 | 戦略的設計 | 戦術的設計 |
