@@ -415,7 +415,7 @@ from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_asyn
 from repository.user_repository import UserRepository
 from service.user_service import UserService
 
-DATABASE_URL = "postgresql+asyncpg://user:password@localhost/dbname"
+DATABASE_URL = "postgresql+asyncpg://USER:PASSWORD@localhost/DBNAME"
 
 engine = create_async_engine(DATABASE_URL, echo=True)
 AsyncSessionLocal = async_sessionmaker(engine, expire_on_commit=False)
